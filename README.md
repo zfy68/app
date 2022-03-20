@@ -1,2 +1,8 @@
 # app
-docker getting started
+docker started
+
+### dockerfile
+
+### docker build
+
+### docker run
