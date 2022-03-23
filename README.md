@@ -15,8 +15,8 @@ docker started
 #####  named volumes
 create a volume by `docker volume create` command.
 
-docker choose
+docker choose.
 
 ##### Bind Mounts
 
-you control
+you control.
