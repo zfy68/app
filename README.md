@@ -1,5 +1,5 @@
 # app
-docker started
+docker started.
 
 ### dockerfile
 
