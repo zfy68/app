@@ -3,6 +3,7 @@ docker started.
 
 ### dockerfile
 
+refer:[Run a Simple .jar Application in a Docker Container](https://dzone.com/articles/run-simple-jar-application-in-docker-container-1)
 #### as simple .jar app dockerfile
 ```
 FROM openjdk:8-jre-alpine3.9
