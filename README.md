@@ -60,4 +60,6 @@ you control.
 - node:12-alpine - the image to use. Note that this is the base image for our app from the Dockerfile
 - sh -c "yarn install && yarn run dev" - the command. We're starting a shell using sh (alpine doesn't have bash) and running yarn install to install all dependencies and then running yarn run dev. If we look in the package.json, we'll see that the dev script is starting nodemon.
 
+<img width="674" alt="image" src="https://user-images.githubusercontent.com/37278360/161106695-5617e478-51c6-41fd-b837-3f4fbbc7241a.png">
+
 #### 
