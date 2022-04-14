@@ -47,5 +47,20 @@ create a volume by `docker volume create` command.
 docker choose.
 
 ##### Bind Mounts
-
 you control.
+
+`docker run -dp 3000:3000 \
+    -w /app -v "$(pwd):/app" \
+    node:12-alpine \
+    sh -c "apk add --no-cache python2 g++ make && yarn install && yarn run dev"
+`
+
+- -dp 3000:3000 - same as before. Run in detached (background) mode and create a port mapping
+- -w /app - sets the container's present working directory where the command will run from
+- -v "$(pwd):/app" - bind mount (link) the host's present working directory to the container's /app directory
+- node:12-alpine - the image to use. Note that this is the base image for our app from the Dockerfile
+- sh -c "yarn install && yarn run dev" - the command. We're starting a shell using sh (alpine doesn't have bash) and running yarn install to install all dependencies and then running yarn run dev. If we look in the package.json, we'll see that the dev script is starting nodemon.
+
+<img width="674" alt="image" src="https://user-images.githubusercontent.com/37278360/161106695-5617e478-51c6-41fd-b837-3f4fbbc7241a.png">
+
+#### 
