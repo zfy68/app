@@ -81,3 +81,14 @@ docker logs -t -f --tail=number container-id
 # --tail show recent number line logs
 
 ```
+
+### docker-compose.yml
+```
+# up yml,start,see logs
+docker-compose up -d
+docker-compose logs -f 
+docker-compose logs -f app
+
+# tear all down
+docker-compose down
+```
