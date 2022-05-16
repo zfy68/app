@@ -63,10 +63,6 @@ you control.
 
 <img width="674" alt="image" src="https://user-images.githubusercontent.com/37278360/161106695-5617e478-51c6-41fd-b837-3f4fbbc7241a.png">
 
-#### 
-
-
-
 ### docker command
 ```
 # see docker container
@@ -79,7 +75,6 @@ docker logs -t -f --tail=number container-id
 # -t show timestamp
 # -f fellow recent logs
 # --tail show recent number line logs
-
 ```
 
 ### docker compose 
