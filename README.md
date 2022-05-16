@@ -82,7 +82,8 @@ docker logs -t -f --tail=number container-id
 
 ```
 
-### docker-compose.yml
+### docker compose 
+create `docker-compose.yml` file,Run the application
 ```
 # up yml,start,see logs
 docker-compose up -d
