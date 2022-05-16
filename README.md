@@ -25,7 +25,6 @@ docker build -t helloworld
 docker images
 docker tag 4b795844c7ab /hello-world
 docker push /hello-world:latest
-
 ```
 
 
@@ -37,7 +36,6 @@ docker push /hello-world:latest
 ```
 docker run /hello-world
 ```
-
 
 #### Container Volumes
 
