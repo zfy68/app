@@ -1,10 +1,13 @@
-# app
-docker started.
+# 1.app
 
-### dockerfile
+## 1.1 docker started.
+
+### 1.1.1 dockerfile
 
 refer:[Run a Simple .jar Application in a Docker Container](https://dzone.com/articles/run-simple-jar-application-in-docker-container-1)
+
 #### as simple .jar app dockerfile
+
 ```
 FROM openjdk:8-jre-alpine3.9
 
@@ -16,7 +19,7 @@ COPY config /app/config
 CMD ["java","-jar","/app/rabbitmq.jar"]
 ```
 
-### docker build
+### 1.1.2 docker build
 
 #### as simple .jar app docker build
 
@@ -27,12 +30,11 @@ docker tag 4b795844c7ab /hello-world
 docker push /hello-world:latest
 ```
 
-
-
-### docker run
+### 1.1.3 docker run
 <img width="1379" alt="截屏2022-03-21 22 55 52" src="https://user-images.githubusercontent.com/37278360/159289620-4d9d1721-0b49-4144-97c9-c9463bcb3151.png">
 
 #### as simple .jar app docker run
+
 ```
 docker run /hello-world
 ```
@@ -61,7 +63,8 @@ you control.
 
 <img width="674" alt="image" src="https://user-images.githubusercontent.com/37278360/161106695-5617e478-51c6-41fd-b837-3f4fbbc7241a.png">
 
-### docker command
+### 1.1.4 docker command
+
 ```
 # see docker container
 docker ps 
@@ -75,7 +78,8 @@ docker logs -t -f --tail=number container-id
 # --tail show recent number line logs
 ```
 
-### docker compose 
+### 1.1.5 docker compose 
+
 create `docker-compose.yml` file,Run the application
 ```
 # up yml,start,see logs
@@ -87,7 +91,8 @@ docker-compose logs -f app
 docker-compose down
 ```
 
-### docker scan ,security scan 
+### 1.1.6 docker scan ,security scan 
+
 ```
 docker scan <image-name> .
 ```
