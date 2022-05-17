@@ -86,3 +86,9 @@ docker-compose logs -f app
 # tear all down
 docker-compose down
 ```
+
+### docker scan ,security scan 
+```
+docker scan <image-name> .
+```
+
